@@ -10,15 +10,16 @@ The repository intentionally does **not** contain a `CNAME` file yet. Add the cu
 
 ## Site structure
 
-- `index.html` — programme overview and contact
-- `strategy.html` — preparation, screening and intensity model
-- `pathways.html` — exam priority and pathway logic
+- `index.html` — public programme overview and contact
+- `programme.html` — student/parent-facing explanation of how CEP works
+- `pathways.html` — supported exam categories and eligibility notes
 - `support.html` — fees, mock tests, document support and transport policy
-- `hindi.html` — Hindi programme summary
+- `hindi.html` — Hindi programme information
+- `strategy.html` — legacy redirect only; no internal strategy content is published
 - `styles.css` — responsive visual system
 - `script.js` — mobile navigation, reveal effects and copyright year
-- `favicon.svg` / `site.webmanifest` — browser identity and install metadata
-- `robots.txt` / `sitemap.xml` — search-engine discovery
+- `favicon.svg`, `og-card.svg`, `site.webmanifest` — browser/social identity
+- `robots.txt`, `sitemap.xml` — search-engine discovery
 - `404.html` — custom error page
 - `.github/workflows/deploy-pages.yml` — automatic GitHub Pages deployment
 
@@ -32,12 +33,9 @@ The deployment workflow is already included. In the repository, open **Settings 
 
 1. In DNS for `bdsps.in`, create a `CNAME` record for `cep` pointing to `pragalbhdwivedi.github.io`.
 2. In **Repository Settings → Pages**, set the custom domain to `cep.bdsps.in`.
-3. Add a repository-root file named `CNAME` containing exactly:
-
-   `cep.bdsps.in`
-
+3. Add a repository-root file named `CNAME` containing exactly `cep.bdsps.in`.
 4. After GitHub verifies DNS, enable **Enforce HTTPS**.
 
-## Content policy
+## Public-content rule
 
-Permanent pages explain the CEP strategy and support model. Exam dates, application windows and changing eligibility details should be published as current notices rather than hard-coded into permanent strategy pages.
+The website is intentionally parent/student facing. Internal preparation strategy, selection thresholds, staffing logic and operational decision rules should not be published here. Current exam dates, application windows and changing eligibility details should be issued as current notices rather than hard-coded into permanent pages.
