@@ -21,13 +21,12 @@ The repository intentionally does **not** contain a `CNAME` file yet. Add the cu
 - `favicon.svg`, `og-card.svg`, `site.webmanifest` — browser/social identity
 - `robots.txt`, `sitemap.xml` — search-engine discovery
 - `404.html` — custom error page
-- `.github/workflows/deploy-pages.yml` — automatic GitHub Pages deployment
 
 The site is dependency-free: no npm, build framework or database is required.
 
-## GitHub Pages setup
+## GitHub Pages deployment
 
-The deployment workflow is already included. In the repository, open **Settings → Pages → Build and deployment** and set **Source** to **GitHub Actions**. Future pushes to `main` will then deploy automatically.
+This repository already has GitHub Pages enabled and GitHub's built-in `pages build and deployment` workflow is triggered by changes on `main`. No additional deployment workflow is required.
 
 ## Connecting `cep.bdsps.in` later
 
